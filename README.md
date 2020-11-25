@@ -1,11 +1,4 @@
 # Advanced Rocketry Additions
  
-## TODO:
-- [x] Boilerplate Code
-- [ ] Test Fuels
-- [ ] Test Rockets
-- [ ] ??
-- [ ] Textures, textures, textures
-- [ ] Fun bit of 3D modelling
-
-
+## Project Board:
+https://github.com/users/Quphoria/projects/2
