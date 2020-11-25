@@ -1,0 +1,15 @@
+[{
+  "modid": "advancedrocketryadditions",
+  "name": "Advanced Rocketry Additions",
+  "description": "Cool stuff for Advanced Rocketry",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Quphoria"],
+  "credits": "Quphoria",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["AdvancedRocketry"],
+  "dependencies": ["AdvancedRocketry"]
+}]
