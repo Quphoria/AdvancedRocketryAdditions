@@ -25,8 +25,6 @@ public class ModFluids {
 	}
 	
 	public static void init() {
-//		FluidUtil.getFilledBucket(targetFluid);
-		FuelRegistry.instance.registerFuel(FuelType.LIQUID, hyperfuel, 100000f);
 		hyperfuelbucket = FluidUtil.getFilledBucket(new FluidStack(hyperfuel, Fluid.BUCKET_VOLUME));
 	}
 	
@@ -34,5 +32,9 @@ public class ModFluids {
 	public static void registerFluids(RegistryEvent.Register<Item> event) {
 		//FluidRegistry.registerFluid(hyperfuel);
 		FluidRegistry.addBucketForFluid(hyperfuel);
+	}
+
+	public static void registerFuels() {
+		FuelRegistry.instance.registerFuel(FuelType.LIQUID, hyperfuel, 100000f);
 	}
 }

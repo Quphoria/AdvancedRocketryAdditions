@@ -73,9 +73,10 @@ dependencies {
 	    maven { url = 'https://files.minecraftforge.net/maven' }
         maven { url = 'https://minecraft.curseforge.com/api/maven' }
         ivy {
-            name "AdvancedRocketry"
-            artifactPattern "http://65.78.115.159:8080/job/Advanced%20Rocketry/job/AdvancedRocketry/job/1.12/" + project.advancedRocketryBuildNum +"/artifact/build/libs/[module]-[revision].[ext]"
-        }//http://65.78.115.159:8080/job/Advanced%20Rocketry/job/AdvancedRocketry/job/1.12/232/artifact/build/libs/AdvancedRocketry-1.12.2-1.7.0-232-sources.jar
+            name "LibVulpes"
+            artifactPattern "http://65.78.115.159:8080/job/LibVulpes/job/libVulpes/job/1.12/" + project.libVulpesBuildNum +"/artifact/output/[module]-[revision].[ext]"
+        }
+	
 	}
 
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
@@ -93,7 +94,8 @@ dependencies {
     // compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
     // compileOnly 'mekanism:Mekanism-1.12.2:9.8.3.390:api'
     //compile name: 'AdvancedRocketry', version: '1.12.2-' + project.advancedRocketryVersion  + '-' + project.advancedRocketryBuildNum + '-sources', ext: 'jar'
-	compile "advanced-rocketry:AdvancedRocketry-1.12.2-1.7.0:232:deobf"
+	compile name: 'LibVulpes', version: '1.12.2-' + project.libVulpesVersion  + '-' + project.libVulpesBuildNum + '-deobf', ext: 'jar'
+	compile "advanced-rocketry:AdvancedRocketry-1.12.2-1.7.0:235:deobf"
     // The 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
     // provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
